@@ -8,60 +8,57 @@ Array.prototype.map = null;
 // Implement these methods
 
 
-Array.prototype.find = function (callback) {
+Array.prototype.find = function(callback, thisArg) {
     // implementation
-    let index = 0;
-  
-    while (index < this.length){
-        if(callback(this[index], index, this))
-            return this[index];
-        index++;
-    }
-    return undefined;
+    let length = this.length
+    for (let index = 0; index < length; index++) {
+      if (callback.call(thisArg, this[index], index, this))
+        return this[index];
+    };
 };
 
-Array.prototype.findIndex = function (callback) {
+Array.prototype.findIndex = function (callback, thisArg) {
     // implementation
     let index = 0;
 
     while (index < this.length){
-        if(callback(this[index], index, this))
+        if(callback.call(thisArg, this[index], index, this))
             return index;
         index++;
     }
     return -1;
 };
 
-Array.prototype.lastIndexOf = function (callback) {
+Array.prototype.lastIndexOf = function (searchElement, fromIndex=this.length) {
     // implementation
-    let index = this.length;
+    let index = fromIndex - 1;
 
     while (index >= 0){
-        if(callback(this[index], index, this))
+        if(searchElement === this[index])
             return index;
         index--;
     }
     return -1;
 };
 
-Array.prototype.some = function (callback) {
+Array.prototype.some = function (callback, thisArg) {
     // implementation
     let index = 0;
 
     while (index < this.length){
-        if (callback(this[index], index, this))
+        if (callback.call(thisArg, this[index], index, this))
             return true;
         index++;
     }
     return false;
 };
 
-Array.prototype.every = function (callback) {
+Array.prototype.every = function (callback, thisArg) {
     // implementation
     let index = 0;
 
     while (index < this.length){
-        if (!callback(this[index], index, this))
+        if (!callback.call(thisArg, this[index], index, this))
             return false;
         index++;
     }
@@ -72,8 +69,8 @@ Array.prototype.reduce = function (callback, accumliator) {
     // implementation
     let index = 0;
 
-    while (index < this.length){
-        accumliator = callback(accumliator, this[index], index, this);
+    for (let el of this){
+        accumliator = callback(accumliator, el, index, this);
         index++;
     }
     return accumliator;
@@ -90,7 +87,8 @@ Array.prototype.reduceRight = function (callback, accumliator) {
     return accumliator;
 };
 
-Array.prototype.join = function (separator) {
+
+Array.prototype.join = function (separator = "") {
     // implementation
     let index = 1;
     let joined = this[0];
@@ -101,13 +99,16 @@ Array.prototype.join = function (separator) {
         joined += separator + this[index];
         index++;
     }
-
     return joined;
 };
 
 Array.prototype.pop = function () {
-    // implementation
-    return this.splice(this.length-1, 1)[0]
+
+    var arrLength = this.length;
+    var deleteObj = this[arrLength - 1];
+    if (this.length !== 0)
+        this.length = arrLength - 1;
+        return deleteObj;
 };
 
 Array.prototype.unshift = function () {
