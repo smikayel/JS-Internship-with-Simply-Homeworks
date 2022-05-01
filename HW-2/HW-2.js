@@ -47,7 +47,7 @@ function solution(roadRegister) {
   afthere this all , values in object all is false ( count of roads 0) it means we need to return true...
   */
   // Implementation
-    let roads = {};
+    const roads = {};
     
     for (let i = 0; i < roadRegister.length; i++) {
         for (let j = 0; j < roadRegister[0].length; j++) {

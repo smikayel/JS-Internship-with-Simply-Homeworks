@@ -74,8 +74,7 @@ function IsMiniSolved(matrix){
 	It will return false if mini sudokus are not solvable and will call 
 	isSolvable function if mini sudocus are solvable.
 	*/
-    let sudokus = [];
-    let one = [];
+    const sudokus = [];
     let i = 0,j = 0;
     let sudoku = "";
     while(i < 9 && j < 9){
