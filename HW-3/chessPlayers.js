@@ -70,6 +70,6 @@ const solution = (chessPlayers, finishedMatches) => {
 };
 
 //============================================================
-finishedMatches = [[0, 1], [1, 2], [2, 0]];
+const finishedMatches = [[0, 1], [1, 2], [2, 0]];
 chessPlayers = 4;
 console.log(solution(chessPlayers, finishedMatches)); // [[ 0, 3 ],[ 1, 3 ],[ 2, 3 ]]
