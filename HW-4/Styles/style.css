@@ -2,10 +2,13 @@ body {
     background-color: #1f2224;
     font-family: 'Roboto';
     font-style: normal;
+    padding: 20px;
 }
 
+
 /* header -------------------------------------------*/
-.header-hiding{
+
+.header-hiding {
     width: 111px;
     height: 33px;
     left: 33px;
@@ -16,22 +19,22 @@ body {
     line-height: 33px;
 }
 
-.header-buttuns{
+.header-buttuns {
     display: flex;
 }
 
-.header-container{
+.header-container {
     padding: 29px 33px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.header-buttun{
+.header-buttun {
     padding: 20px;
 }
 
-.header-update-button{
+.header-update-button {
     height: 35px;
     width: 137px;
     border-radius: 4px;
@@ -44,7 +47,7 @@ body {
     line-height: 19px;
 }
 
-.mini-rectangl{
+.mini-rectangl {
     width: 56px;
     height: 20px;
     background-color: #131718;
@@ -53,11 +56,11 @@ body {
     margin-left: -4px;
 }
 
-.header-buttun-nonactive{
+.header-buttun-nonactive {
     opacity: 0.25;
 }
 
-.mini-rectangle-text{
+.mini-rectangle-text {
     color: white;
     font-family: 'Roboto';
     font-style: normal;
@@ -70,4 +73,22 @@ body {
     height: 16px;
 }
 
+
 /* content -------------------------------------------*/
+
+.content-uploader {
+    background: rgba(22, 24, 25, 0.26);
+    border: 1px dashed rgba(214, 221, 222, 0.26);
+    border-radius: 4px;
+    width: 100%;
+    height: 231px;
+}
+
+.uploader-input-field {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    /* opacity: 0; */
+}
