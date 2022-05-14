@@ -37,36 +37,26 @@ const solution = (chessPlayers, finishedMatches) => {
     */
     // your code
     validation(chessPlayers, finishedMatches);
-    let players = chessPlayers;
-    const countMatcheAll = [];
-
-    while (chessPlayers-- > 0){
-        const countMatches = [];
-        countMatches.push(chessPlayers);
-        for (let matche of finishedMatches){
-            if (matche[0] === chessPlayers)
-                countMatches.push(matche[1]);
-            else if (matche[1] === chessPlayers)
-                countMatches.push(matche[0]);
+    let result = [];
+    let includes1;
+    let includes2;
+  
+    for (let i = 0; i < chessPlayers; i++) {
+      for (let j = i + 1; j < chessPlayers; j++) {
+        includes1 = finishedMatches.some((a) =>
+          [i, j].every((v, z) => v === a[z])
+        );
+  
+        includes2 = finishedMatches.some((a) =>
+          [j, i].every((v, z) => v === a[z])
+        );
+  
+        if (!includes1 && !includes2) {
+          result.push([i, j]);
         }
-        countMatcheAll[chessPlayers] = countMatches;
+      }
     }
-    const resoult = [];
-    let playerNumber = 0;
-    for (let match of countMatcheAll){
-        let i = 0;
-        while (i < players){
-            if (!match.includes(i)){
-                if (playerNumber < i){
-                    resoult.push([playerNumber, i])
-                    break ;
-                }
-            }
-            i++;
-        }
-        playerNumber++;
-    }
-    return resoult;
+    return result;
 };
 
 //============================================================
