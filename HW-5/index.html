@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">  
+    <!-- roboto font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="page-header">
+            <h1 class="header-h"> Licenses </h1>
+            <div class="header-buttons">
+                <div class="header-licenses">
+                    <div class="licenses free">
+                        <div class="rectangele">FREE</div>
+                    </div>
+                    <div class="licenses pro">
+                        <div class="rectangele"> PRO </div>
+                    </div>
+                    <div class="licenses vip">
+                        <div class="rectangele"> VIP </div>
+                    </div>
+                    <button class="upload-button">Upgrade Now</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="menu">
+            <div class="menu-buttons">
+                <div class="menu-button">
+                    <button class="menu-button-style subscription">Subscription</button>
+                </div>
+                <div class="menu-button">
+                    <button class="menu-button-style outrigt">Outright</button>
+                </div>
+                <div class="menu-button license-active">
+                    <button class="menu-button-style offline">Offline Activation </button>
+                    <hr class="button-active-liner" />
+                </div>
+            </div>
+            <hr class="menu-underline" />
+        </div>
+
+    </header>
+
+    <div class="content">
+        <text class="content-header" >Systems</text>
+        <div class="tables">
+            <table class="table-header">
+                <tr class="table-header-column">
+                    <td style="width: 16px;"></td>
+                    <td style="width: 76px;">System Name</td>
+                    <td style="width: 222px;"></td>
+                    <td style="width: 12px;">ID</td>
+                    <td style="width: 80px;"></td>
+                    <td style="width: 70px;">Created date</td>
+                    <td style="width: 101px;"></td>
+                    <td style="width: 85px;">Active Licenses</td>
+                    <td style="width: 254px;"></td>
+                </tr>
+            </table>
+            <template id="data-maket">
+                <div class="table-data-maket">
+                    <table class="table-data">
+                        <tr class="table-data-row" style="width: 634px">
+                            <td style="width: 16px;"></td>
+                            <td style="width: 12px;"><text class="arr" id="get-data">▶</text></td>
+                            <td style="width: 16px;"></td>
+                            <td style="width: 170px;" id="sys-name">James-Main-Mackbook</td>
+                            <td style="width: 56px;"></td>
+                            <td style="width: 45px;" id='id'>91520</td>
+                            <td style="width: 81px;"></td>
+                            <td style="width: 89px;"id='created-data'>01 Jan 2019</td>
+                            <td style="width: 156px;"></td>
+                            <td style="width: 9px;" id="active-licenses">2</td>
+                        </tr>
+                    </table>
+                    <div class="buttons-table">
+                        <button class="button-in-row row-button-color-green">Add License</button>
+                        <button class="button-in-row row-button-color-red">Remove</button>
+                    </div>
+                </div>
+            </template>
+            <template id="sub-data-maket">
+                <div class="sub-data-container">
+                    <div class="sub-data-header">
+                        <div class="horizontal-line"></div>
+                        <table class="sub-table-header">
+                            <tr class="table-header-column">
+                                <td style="width: 30px;"></td>
+                                <td style="width: 48px;">Licenses</td>
+                                <td style="width: 305px;"></td>
+                                <td style="width: 39px;">Expires</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </template>
+            <template id="sub-maket-row">
+                <div class="sub-data-rows">
+                    <div class="g"> 
+                        <div class="g-horizontal-line"></div>
+                        <div class="g-horizontal-line" style="position: relative;"></div>
+                        <div class="g-vertical-line"></div>
+                    </div>
+                    <div class="sub-data-rows-maket">
+                        <table class="table-data">
+                            <tr class="table-data-row">
+                                <td style="width: 16px;"></td>
+                                <td style="width: 170px;" id="licenses">Jenkins Pro</td>
+                                <td style="width: 230px;"></td>
+                                <td style="width: 150px;" id='expire'>Never</td>
+                                <td style="width: 650px;"></td>
+                            </tr>
+                        </table>
+                        <div class="download-button-row">
+                            <button class="download-button">Download</button>
+                        </div>
+                    </div>
+
+                </div> 
+            </template>
+            <template id="table-header-other-part">
+                <div style="height: 31px;"></div>
+                <table class="table-header">
+                    <tr class="table-header-column">
+                        <td style="width: 16px;"></td>
+                        <td style="width: 76px;"></td>
+                        <td style="width: 222px;"></td>
+                        <td style="width: 12px;"></td>
+                        <td style="width: 80px;"></td>
+                        <td style="width: 70px;">Created date</td>
+                        <td style="width: 101px;"></td>
+                        <td style="width: 85px;">Active Licenses</td>
+                        <td style="width: 254px;"></td>
+                    </tr>
+                </table>
+            </template>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <text>Add System</text>
+    
+            <div class="drag-drop-uploader">
+                <input class="uploader-input-field" type="file" multiple>
+                <div class="upload-icon">
+                    <text class="arrow">↓</text>
+                </div> 
+                <div class="upload-text">
+                    <text><text class="upload-click" href>Choose a file </text>to upload or drag it here </text>
+                    <text class="file-size">(jpg, png, max size 5mb)</text>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- <script src="./src/source.js"></script> -->
+    <script src="./src/data.js" type="module"></script>
+</body>
+
+</html>
