@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remainder</title>
+    <link rel="stylesheet" href="./statics/style.css">
+</head>
+<body>
+    <h1 id="logo"> Remainder </h1>
+    <h3>Search remainder by id if you have it))</h3>
+    <input id="search" placeholder="search by id"/>
+    <button id="search-button">Search</button>
+
+    <div id="search-container">
+    </div>
+
+    <div id="add">
+        <h3>Add remainder : </h3>
+        <text>fill filds and pres Add button...</text><br>
+        <input id="addRemainderDescription" placeholder="description"/>
+        <input id="addRemainderRemaindAt" placeholder="time to remaind at"/>
+        <button id="addButton">Add</button>
+    </div>
+
+    <div id="update">
+        <h3>update remainder with id:</h3>
+        <text>fill filds and press the update buton, witch one you wont to update...</text><br>
+        <input id="updateDescription" placeholder="description"/>
+        <input id="updateRemaindAt" placeholder="time to remaind at"/>
+        <input id="updateId" placeholder="Task id"/>
+    </div>
+    
+    <table class="remainder">
+        <tr>
+          <th>Description</th>
+          <th>remaindAt</th>
+          <th>status</th>
+          <th></th>
+          <th></th>
+        </tr>
+    </table>
+    <script src="./controller/controller.js" ></script>
+</body>
+</html>
