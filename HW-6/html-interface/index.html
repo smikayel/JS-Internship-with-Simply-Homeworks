@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remainder</title>
+    <link rel="stylesheet" href="./statics/style.css">
+</head>
+<body>
+    <h1 id="logo"> Remainder </h1>
+
+    <div id="add">
+        <h3>Add remainder : </h3>
+        <input id="addRemainderDescription" placeholder="description"/>
+        <input id="addRemainderRemaindAt" placeholder="Due date"/>
+        <text> Status:</text>
+        <input id="addRemainderStatus" type="checkbox" />
+        <button id="addButton">Add</button>
+    </div>
+
+    <div id="update">
+        <h3>Update remainder:</h3>
+        <input id="updateDescription" placeholder="description"/>
+        <input id="updateRemaindAt" placeholder="Due date"/>
+        <text> Status:</text>
+        <input id="updateRemainderStatus" type="checkbox" />
+    </div>
+    <br />
+    <table class="remainder">
+        <tr>
+          <th>Description</th>
+          <th>remaindAt</th>
+          <th>status</th>
+          <th></th>
+          <th></th>
+        </tr>
+    </table>
+    <script src="./controller/controller.js" ></script>
+</body>
+</html>
