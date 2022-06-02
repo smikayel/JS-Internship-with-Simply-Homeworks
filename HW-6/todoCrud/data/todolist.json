@@ -1,21 +1,11 @@
 [
   {
-    "description": "Go to ACA",
-    "remaindAt": "Sun, 29 May 2022 14:43:36 GMT",
+    "description": "Go to home",
+    "remaindAt": "Mon, 30 May 2022 15:20:35 GMT",
     "status": "done",
-    "id": "4eb0c47a-63d7-4fa6-b41d-31aa114db17c",
-    "createdAT": "Sun, 29 May 2022 14:43:45 GMT",
-    "updateedAt": "Sun, 29 May 2022 14:43:45 GMT",
+    "id": "b3b950e7-2e77-44dc-8d6a-5fdd324d23d4",
+    "createdAT": "Mon, 30 May 2022 15:21:12 GMT",
+    "updateedAt": "Mon, 30 May 2022 15:21:12 GMT",
     "done": true
-  },
-  {
-    "description": "Go to 42Yerevan",
-    "remaindAt": "Sun, 29 May 2022 14:44:36 GMT",
-    "status": "done",
-    "id": "561dc0ab-5d0b-4501-84ca-dda21f7a4ccb",
-    "createdAT": "Sun, 29 May 2022 14:44:02 GMT",
-    "updateedAt": "Sun, 29 May 2022 14:44:32 GMT",
-    "done": true,
-    "timerId": 134
   }
 ]
